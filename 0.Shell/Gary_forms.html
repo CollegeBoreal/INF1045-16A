@@ -1,0 +1,106 @@
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="Platforme de messagerie pour les eleves du College Boreal.">
+      <title>
+      FaceGary
+      </title>
+   <head>
+   
+   <body>
+
+   <p>
+      <center>
+         <h2>
+            <u><b>
+            Boreal Chat
+    </b></u>
+         </h2>
+
+         <br>
+
+         <h5>
+            Ta nouvelle platforme de messagerie. 
+         </h5>
+      </center>
+   </p>
+
+   <hr>
+   
+      <p>   
+         <center>
+ <form action="Gary_forms.php" method="post">
+    <fieldset><legend> Validation </legend> 
+          Nom d'utilisateur:<br>
+       <input type="text" name ="username" value=""><br>
+          Mot de passe:<br>
+       <input type="password" name="motdepasse" value="">
+       <br><br>
+       <input type="submit" id="submit" value="Valider">
+       <br>   
+    </fieldset>
+ </form>
+      </p>
+
+      <hr>
+
+      <p>
+         Inscrivez vous des maintenant sur FaceGary.
+ L'application fair pour te connecter avec tes amis!
+ Tu n'as qu'a choisir ton annee et soummetre! :)
+      </p><br>
+
+      <textarea align="center" rows="3" cols="51">
+Donne une breve description de ce que vous voulez faire apres les etudes, et selectionne ton annee d'etude.
+      </textarea><br>
+
+      <form method="get">
+         <input list="anneeetude" nom="quelAnnee">
+    <datalist id="anneeetude">
+       <option value="Premiere annee">
+       <option value="Deuxieme annee">
+       <option value="Troisieme annee">
+       <option value="Quatrieme annee">
+    </datalist>
+ <input type="submit">
+      </form>
+
+      <br><br> 
+      <fieldset>
+         <form method="get">
+            Nom d'utilisateur: <input type="text" name="nomUtilisateur">
+    Encryption: <keygen name="securite">
+ <input type="submit">
+ </form>
+      </fieldset><br>
+
+      <p>petite Calculatrice pour addition:</p><br>
+      
+      <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+         <input type="number" id="a" value="">
+         + <input type="number" id="b" value="">
+         =<output name="x" for="a b"></output>
+      </form>
+
+      </center>
+
+       <br><br><br>
+      <p>
+         <small> <wbr>
+            <select>
+               <optgroup label="Canada">
+          <option value="francais">Francais</option>
+          <option value="anglais"> English </option>
+       </optgroup>
+          <optgroup label="Ailleurs">
+          <option value="espagne"> Espanole</option>
+          <option value="chine"> Mandarin</option>
+  <option value="japon"> Japonais</option>
+  <option value="maurice"> Creole </option>
+       </optgroup>
+            </select>
+ </wbr></small>
+         
+   </body>
+
+<html>
