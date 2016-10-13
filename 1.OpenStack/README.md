@@ -2,7 +2,7 @@
 
 ## Pourquoi?
 
-![alt tag](https://github.com/CollegeBoreal/INF1006-16A/blob/master/3.DML/sakila.png)
+![alt tag](https://github.com/CollegeBoreal/INF1045-16A/blob/master/1.OpenStack/openstack-and-docker.png)
 
 ## Couches
 
