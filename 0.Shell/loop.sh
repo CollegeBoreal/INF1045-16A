@@ -6,7 +6,4 @@ NAME[2]="Mahnaz"
 NAME[3]="Ayan"
 NAME[4]="Daisy" 
 
-for i in ${NAME[@]}
-do
-   echo Bonjour, $i
-   done
+for i in ${NAME[@]}; do echo Bonjour, $i; done
