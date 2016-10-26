@@ -15,3 +15,8 @@ $ ./stack.sh
 ## Par VirtualBox
 
 http://codybum.com/openstackinaction/
+
+
+## Newton Documentation
+
+http://docs.openstack.org/newton/
