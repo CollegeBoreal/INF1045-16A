@@ -13,6 +13,8 @@
 
 https://www.linux.com/learn/understanding-and-using-systemd
 
+![alt tag](https://github.com/CollegeBoreal/INF1045-16A/blob/master/1.Boot/Systemd_components.svg.png)
+
 ## Package Managers
 
 https://en.wikipedia.org/wiki/List_of_software_package_management_systems
