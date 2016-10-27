@@ -1,8 +1,11 @@
 # Linux Boot
 
 
-## GRUB
-  * GRand Unified Bootloader 
+## GRUB (GRand Unified Bootloader)
+   https://doc.ubuntu-fr.org/grub-pc
+
+   Il s'exécute à la mise sous tension de l'ordinateur, après les séquences de contrôle interne et avant le système d'exploitation
+
 
 ## systemd
 
