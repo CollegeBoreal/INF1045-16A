@@ -23,7 +23,7 @@ http://docs.openstack.org/newton/
 
 ## Creer une instance avec docker-machine
 
-* Installer docker-machine
+* Installer docker-machine  
 https://docs.docker.com/machine/install-machine/
 
 * Pointer vers le controller OpenStack
