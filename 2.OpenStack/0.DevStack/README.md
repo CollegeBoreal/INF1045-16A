@@ -29,10 +29,10 @@ https://docs.docker.com/machine/install-machine/
 * Pointer vers le controller OpenStack
 
 ```
- $ export OS_USERNAME=demo \
-          OS_PASSWORD=$OPENSTACK_DEMO_PASSWORD \
+ $ export OS_AUTH_URL=http://10.0.2.32:5000/v2.0 \
           OS_TENANT_NAME=demo \
-          OS_AUTH_URL=http://10.0.2.32:5000/v2.0
+          OS_USERNAME=demo \
+          OS_PASSWORD=$OPENSTACK_DEMO_PASSWORD          
 ```
 
 * Lancer la commande de creation de VM
