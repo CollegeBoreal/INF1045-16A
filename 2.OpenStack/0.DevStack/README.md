@@ -38,7 +38,7 @@ https://docs.docker.com/machine/install-machine/
 * Lancer la commande de creation de VM
 
 ```
-$ docker-machine create --driver openstack \
+$ docker-machine --debug create --driver openstack \
      --openstack-flavor-name m1.small \
      --openstack-image-name "cirros-0.3.2-x86_64-uec" \
      --openstack-ssh-user "cirros" \
@@ -50,5 +50,8 @@ $ docker-machine create --driver openstack \
 ```
 
 ```
-export DOCKER_TLS_VERIFY="1" DOCKER_HOST="tcp://172.24.4.4:2376" DOCKER_CERT_PATH="~/.docker/machine/machines/INF1045" DOCKER_MACHINE_NAME="INF1045"
+$ export DOCKER_TLS_VERIFY="1" \ 
+       DOCKER_HOST="tcp://172.24.4.4:2376" \
+       DOCKER_CERT_PATH="~/.docker/machine/machines/INF1045" \
+       DOCKER_MACHINE_NAME="INF1045"
 ```
