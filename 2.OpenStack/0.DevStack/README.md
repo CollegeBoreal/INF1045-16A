@@ -49,3 +49,7 @@ $ docker-machine create --driver openstack \
      INF1045
 ```
 
+export DOCKER_TLS_VERIFY="1"
+export DOCKER_HOST="tcp://172.24.4.4:2376"
+export DOCKER_CERT_PATH="C:\Users\worker\.docker\machine\machines\default"
+export DOCKER_MACHINE_NAME="default"
