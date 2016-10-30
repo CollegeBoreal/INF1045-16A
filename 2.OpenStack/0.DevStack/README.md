@@ -55,3 +55,5 @@ $ export DOCKER_TLS_VERIFY="1" \
        DOCKER_CERT_PATH="${HOME}/.docker/machine/machines/INF1045" \
        DOCKER_MACHINE_NAME="INF1045"
 ```
+
+http://cloud-images.ubuntu.com/precise/current/precise-server-cloudimg-amd64-disk1.img
