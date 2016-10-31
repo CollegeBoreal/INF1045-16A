@@ -80,14 +80,14 @@ $ glance --os-username=admin --os-password devstack \
 
 ```
 $ cd /run/shm  
-$ wget https://cloud-images.ubuntu.com/vivid/current/vivid-server-cloudimg-amd64-disk1.img
+$ wget https://cloud-images.ubuntu.com/precise/current/precise-server-cloudimg-amd64-disk1.img
 $ glance image-create \
-         --name "UbuntuTest" \
+         --name "Ubuntu-14.04" \
          --disk-format qcow2 \
          --container-format bare \
           --is-public True \
           --progress \
          --file vivid-server-cloudimg-amd64-disk1.img
-$ nova boot --flavor m1.tiny --image UbuntuTest --nic net-id=<NET_ID> --key-name <KEY_PAIR> instancetest1
+$ nova boot --flavor m1.tiny --image Ubuntu-14.04 --nic net-id=<NET_ID> --key-name <KEY_PAIR> instancetest1
 $ ssh -i <KEY_PAIR> ubuntu@<INSTANCE_FLOATING_IP>
 
