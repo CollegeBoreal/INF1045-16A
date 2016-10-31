@@ -65,9 +65,9 @@ $ wget http://cloud-images.ubuntu.com/xenial/current/xenial-server-cloudimg-amd6
 ```
 
 ```
-$ glance --os-username=admin --os-password openstack1 \
+$ glance --os-username=admin --os-password devstack \
          --os-tenant-name=admin \
-         --os-auth-url=http://10.0.2.3:5000/v2.0 \
+         --os-auth-url=http://10.0.2.32:5000/v2.0 \
          image-create \
          --name="Ubuntu 16.04" \
          --is-public=true \
