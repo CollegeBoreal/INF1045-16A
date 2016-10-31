@@ -78,9 +78,16 @@ $ glance --os-username=admin --os-password devstack \
 
 --
 
-# cd /tmp/
-# wget https://cloud-images.ubuntu.com/vivid/current/vivid-server-cloudimg-amd64-disk1.img
-glance image-create --name "UbuntuTest" --disk-format qcow2 --container-format bare --file vivid-server-cloudimg-amd64-disk1.img --is-public True --progress
- # nova boot --flavor m1.tiny --image UbuntuTest --nic net-id=<NET_ID> --key-name <KEY_PAIR> instancetest1
-# ssh -i <KEY_PAIR> ubuntu@<INSTANCE_FLOATING_IP>
+```
+$ cd /run/shm  
+$ wget https://cloud-images.ubuntu.com/vivid/current/vivid-server-cloudimg-amd64-disk1.img
+$ glance image-create \
+         --name "UbuntuTest" \
+         --disk-format qcow2 \
+         --container-format bare \
+          --is-public True \
+          --progress \
+         --file vivid-server-cloudimg-amd64-disk1.img
+$ nova boot --flavor m1.tiny --image UbuntuTest --nic net-id=<NET_ID> --key-name <KEY_PAIR> instancetest1
+$ ssh -i <KEY_PAIR> ubuntu@<INSTANCE_FLOATING_IP>
 
