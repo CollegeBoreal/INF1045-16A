@@ -57,3 +57,21 @@ $ export DOCKER_TLS_VERIFY="1" \
 ```
 
 http://cloud-images.ubuntu.com/precise/current/precise-server-cloudimg-amd64-disk1.img
+
+Ubuntu 16.04 Image
+
+```
+$ wget http://cloud-images.ubuntu.com/xenial/current/xenial-server-cloudimg-amd64-disk1.img
+```
+
+```
+$ glance --os-username=admin --os-password openstack1 \
+         --os-tenant-name=admin \
+         --os-auth-url=http://10.0.2.3:5000/v2.0 \
+         image-create \
+         --name="Ubuntu 16.04" \
+         --is-public=true \
+         --disk-format=qcow2 \
+         --container-format=bare \
+         --file xenial-server-cloudimg-amd64-disk1.img
+```
