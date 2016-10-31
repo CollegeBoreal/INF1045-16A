@@ -75,3 +75,12 @@ $ glance --os-username=admin --os-password devstack \
          --container-format=bare \
          --file xenial-server-cloudimg-amd64-disk1.img
 ```
+
+--
+
+# cd /tmp/
+# wget https://cloud-images.ubuntu.com/vivid/current/vivid-server-cloudimg-amd64-disk1.img
+glance image-create --name "UbuntuTest" --disk-format qcow2 --container-format bare --file vivid-server-cloudimg-amd64-disk1.img --is-public True --progress
+ # nova boot --flavor m1.tiny --image UbuntuTest --nic net-id=<NET_ID> --key-name <KEY_PAIR> instancetest1
+# ssh -i <KEY_PAIR> ubuntu@<INSTANCE_FLOATING_IP>
+
