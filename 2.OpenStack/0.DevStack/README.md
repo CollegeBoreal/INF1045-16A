@@ -87,7 +87,7 @@ $ glance image-create \
          --container-format bare \
           --is-public True \
           --progress \
-         --file vivid-server-cloudimg-amd64-disk1.img
+         --file precise-server-cloudimg-amd64-disk1.img
 $ nova boot --flavor m1.tiny --image Ubuntu-14.04 --nic net-id=<NET_ID> --key-name <KEY_PAIR> instancetest1
 $ ssh -i <KEY_PAIR> ubuntu@<INSTANCE_FLOATING_IP>
 ```
