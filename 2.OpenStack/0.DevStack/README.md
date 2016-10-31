@@ -95,3 +95,18 @@ $ ssh -i <KEY_PAIR> ubuntu@<INSTANCE_FLOATING_IP>
 ```
 $  glance image-delete "Ubuntu-16.04"
 ```
+
+
+```
+$ cd /run/shm  
+$ wget http://download.cirros-cloud.net/0.3.4/cirros-0.3.4-x86_64-disk.img
+$ glance image-create \
+         --name "cirros-0.3.4" \
+         --disk-format qcow2 \
+         --container-format bare \
+          --is-public True \
+          --progress \
+         --file cirros-0.3.4-x86_64-disk.img
+$ nova boot --flavor m1.tiny --image Ubuntu-14.04 --nic net-id=<NET_ID> --key-name <KEY_PAIR> instancetest1
+$ ssh -i <KEY_PAIR> ubuntu@<INSTANCE_FLOATING_IP>
+```
