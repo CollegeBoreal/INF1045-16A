@@ -69,7 +69,7 @@ $ glance --os-username=admin --os-password devstack \
          --os-tenant-name=admin \
          --os-auth-url=http://10.0.2.32:5000/v2.0 \
          image-create \
-         --name="Ubuntu 16.04" \
+         --name="Ubuntu-16.04" \
          --is-public=true \
          --disk-format=qcow2 \
          --container-format=bare \
