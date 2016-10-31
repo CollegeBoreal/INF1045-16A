@@ -110,3 +110,15 @@ $ glance image-create \
 $ nova boot --flavor m1.tiny --image Ubuntu-14.04 --nic net-id=<NET_ID> --key-name <KEY_PAIR> instancetest1
 $ ssh -i <KEY_PAIR> ubuntu@<INSTANCE_FLOATING_IP>
 ```
+
+```
+docker-machine --debug create --driver openstack \
+     --openstack-flavor-name m1.small \
+     --openstack-image-name "cirros-0.3.4" \
+     --openstack-ssh-user "cirros" \
+     --openstack-floatingip-pool public \
+     --openstack-sec-groups default  \
+     --openstack-nova-network \
+     --openstack-net-name nova \
+     INF1045
+```
