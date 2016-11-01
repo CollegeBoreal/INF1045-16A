@@ -30,3 +30,6 @@ https://en.wikipedia.org/wiki/List_of_software_package_management_systems
 https://doc.ubuntu-fr.org/dpkg
 
 
+# Reference:
+https://training.linuxfoundation.org/linux-courses/system-administration-training/linux-system-administration
+
