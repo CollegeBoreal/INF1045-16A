@@ -1,14 +1,30 @@
 # Blog (Projet)
 
-Le projet consiste à écrire un blog réalisant les aspets suivants du cours:
+Le projet consiste à écrire un blog réalisant les aspects suivants du cours:
 
-## Openstack 
+## Blog
+* Créer un blog visible par ses pairs
+* Le blog fournira des informations sur la gestion d'un nuage
+* Le blog pourra fournir un espace commentaires 
+* Le blog permettra de prendre les commentaires en compte et améliorer le blog
+* Le choix de la langue est au choix de l'étudiant
+
+## Installer un nuage - Openstack 
 * Installer un serveur Linux - Linux 16.04.1 LTS (Xenial Xerus) 
-* Créer une instance devstack - Newton
+* Créer un nuage en mode développement (devstack - Newton)
 * Créer un projet (Tenant) avec utilisateurs (au moins un)
-* Attacher un reseau externe au projet
+* Attacher un reseau externe au projet (fournir le schéma du réseau proposé)
 * installer une image de votre choix (compatible Docker)
 
 ## Docker
 * Creer une machine virtuelle 
-* Creer une simple orchestration
+* Creer une simple orchestration (Docker Compose)
+
+```
+Note: 
+Le projet se fera sur plusieurs semaines. 
+Chaque semaine un état sur la progression sera fait. (Jeudi de chaque semaine)
+L'état de la progression doit etre fournie sur le blog choisi.
+Des pénalités peuvent être encourrues sur le blog ne progresse pas. (25% par semaines)
+Le blog doit être fini au 1er decembre.
+```
