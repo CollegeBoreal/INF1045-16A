@@ -20,6 +20,8 @@ systemd est un système d’initialisation et un daemon qui a été spécifiquem
 ### SysVinit to Systemd
 https://fedoraproject.org/wiki/SysVinit_to_Systemd_Cheatsheet
 
+### virbr0
+http://www.cyberciti.biz/faq/linux-kvm-disable-virbr0-nat-interface/
 
 ## Package Managers
 
