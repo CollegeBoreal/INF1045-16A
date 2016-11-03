@@ -16,7 +16,7 @@ Le projet consiste à écrire un blog réalisant les aspects suivants du cours:
 * Attacher un reseau externe au projet (fournir le schéma du réseau proposé)
 * installer une image de votre choix (compatible Docker)
 
-## Docker
+## Lancer un service - Docker
 * Creer une machine virtuelle 
 * Creer une simple orchestration (Docker Compose)
 
