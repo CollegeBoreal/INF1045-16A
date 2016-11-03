@@ -1,16 +1,17 @@
-Linux System Administration
+# Linux System Administration
 
-Introduction
-Linux Foundation
-Linux Foundation Training
-Laboratory Exercises, Solutions and Resources
-Distribution Details
-Registration
-Labs
-System Startup and Shutdown
-Understanding the Boot Sequence
-The Grand Unified Boot Loader
-GRUB Configuration Files
+## Introduction
+Linux Foundation  
+Linux Foundation Training  
+Laboratory Exercises, Solutions and Resources  
+Distribution Details  
+Registration  
+Labs  
+
+## System Startup and Shutdown
+Understanding the Boot Sequence  
+The Grand Unified Boot Loader  
+GRUB Configuration Files  
 System Configuration Files in /etc
 The init Process
 systemd
