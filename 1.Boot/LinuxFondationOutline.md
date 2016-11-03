@@ -1,62 +1,65 @@
 # Linux System Administration
 
 ## Introduction
-Linux Foundation  
-Linux Foundation Training  
-Laboratory Exercises, Solutions and Resources  
-Distribution Details  
-Registration  
-Labs  
+* Linux Foundation  
+* Linux Foundation Training  
+* Laboratory Exercises, Solutions and Resources  
+* Distribution Details  
+* Registration  
+* Labs  
 
 ## System Startup and Shutdown
-Understanding the Boot Sequence  
-The Grand Unified Boot Loader  
-GRUB Configuration Files  
-System Configuration Files in /etc
-The init Process
-systemd
-SysVinit Startup
-chkconfig and service
-Upstart
-Shutting down/Rebooting the System
-Labs
-Linux Filesystem Tree Layout
-Data Distinctions
-FHS Linux Standard Directory Tree
-root (/) directory
-/bin
-/boot
-/dev
-/etc
-/home
-/lib and /lib64
-/media
-/mnt
-/opt
-/proc
-/sys
-/root
-/sbin
-/srv
-/tmp
-/usr
-/var
-/run
-Labs
-Kernel Services and Configuration
-Kernel Overview
-Kernel Configuration
-sysctl
-Kernel Modules
-Module Utilities
-Module Configuration
-udev and Device Management
-Labs
-Partitioning and Formatting Disks
-Common Disk Types
-Disk Geometry
-Partitioning
-Naming Disk Devices
+* Understanding the Boot Sequence  
+* The Grand Unified Boot Loader  
+* GRUB Configuration Files  
+* System Configuration Files in /etc  
+* The init Process  
+* systemd  
+* SysVinit Startup  
+* chkconfig and service  
+* Upstart  
+* Shutting down/Rebooting the System  
+* Labs  
+
+## Linux Filesystem Tree Layout
+* Data Distinctions  
+* FHS Linux Standard Directory Tree  
+* root (/) directory  
+*/bin  
+*/boot  
+*/dev  
+*/etc  
+*/home  
+*/lib and /lib64  
+*/media  
+*/mnt  
+*/opt  
+*/proc  
+*/sys  
+*/root  
+*/sbin  
+*/srv  
+*/tmp  
+*/usr  
+*/var  
+*/run  
+*Labs  
+
+## Kernel Services and Configuration
+*Kernel Overview  
+*Kernel Configuration  
+*sysctl  
+*Kernel Modules  
+*Module Utilities  
+*Module Configuration  
+*udev and Device Management  
+*Labs  
+
+## Partitioning and Formatting Disks
+*Common Disk Types
+*Disk Geometry
+*Partitioning
+*Naming Disk Devices
 Sizing up partitions
 Partition table editors
 Labs
