@@ -19,6 +19,7 @@ Le projet consiste à écrire un blog réalisant les aspects suivants du cours:
 ## Lancer un service - Docker
 * Creer une machine virtuelle 
 * Creer une simple orchestration (Docker Compose)
+* Au moins deux microservices sont requis (web,DB) ou (web,media server), ...
 
 ```
 Note: 
