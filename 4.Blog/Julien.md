@@ -1,5 +1,5 @@
 # BLOG
 
 '''
-http://www..com/
+https://myusernamesite.wordpress.com
 '''
