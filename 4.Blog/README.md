@@ -9,9 +9,11 @@ Le projet consiste à écrire un blog réalisant les aspects suivants du cours:
 * Le blog permettra de prendre les commentaires en compte et améliorer le blog
 * Le choix de la langue est au choix de l'étudiant
 
-## Installer un nuage - Openstack 
+## Prérequis - Openstack 
 * Installer un serveur Linux - Linux 16.04.1 LTS (Xenial Xerus) 
 * Créer un nuage en mode développement (devstack - Newton)
+
+## Configurer un nuage - Openstack [Noté] 
 * Créer un projet (Tenant) avec utilisateurs (au moins un)
 * Attacher un reseau externe au projet (fournir le schéma du réseau proposé)
 * installer une image de votre choix (compatible Docker)
