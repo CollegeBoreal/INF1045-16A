@@ -14,10 +14,10 @@ Le projet consiste à écrire un blog réalisant les aspects suivants du cours:
 * Créer un nuage en mode développement (devstack - Newton)
 
 ## Configurer un nuage - Openstack [Noté] 
-1) Créer un projet (Tenant) avec utilisateurs (au moins un)
-2) Attacher un reseau externe au projet (fournir le schéma du réseau proposé)
-3) installer une image de votre choix (compatible Docker)
-Note: Se référer à OpenStack in Action - chapitre 3
+1) Créer un projet (Tenant) avec utilisateurs (au moins un)  
+2) Attacher un reseau externe au projet (fournir le schéma du réseau proposé)  
+3) installer une image de votre choix (compatible Docker)  
+Note: Se référer à OpenStack in Action - chapitre 3  
 
 ## (4) Lancer un service - Docker
 * Creer une machine virtuelle 
