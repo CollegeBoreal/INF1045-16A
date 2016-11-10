@@ -20,3 +20,9 @@ ensuite lancer l'application web avec un lien a la DB
 $ docker run --name monsitelive -p 5000:5000 --link some-redis:redis -d monsite
 ```
 
+# Nettoyage
+
+## Arreter et enlever un conteneur
+```
+$ docker rm -f monsitelive
+```
