@@ -9,6 +9,8 @@ $ docker build -t monsite .
 
 ## Avec orchestration (docker-Compose)
 
+[!alt tag](https://github.com/CollegeBoreal/INF1045-16A/blob/master/5.Orchestration/micro.png)
+
 
 ## Sans orchestration
 Lancer la DB
