@@ -1,3 +1,3 @@
-# Orchestration de service
+# Orchestration de services
 
 ## Docker-Compose
