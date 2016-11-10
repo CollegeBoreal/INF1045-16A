@@ -7,7 +7,7 @@ $ docker build -t monsite .
 ```
 
 
-## Docker-Compose
+## Avec orchestration (docker-Compose)
 
 
 ## Sans orchestration
