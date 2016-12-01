@@ -32,9 +32,9 @@ $ openstack project list
 
 ## Vérifier configuration OVS
 ```
-sudo ovs-vsctl show
+$ sudo ovs-vsctl show
 ```
 ## Vérifier configuration OVS
 ```
-sudo ovs-vsctl show
+$ sudo ovs-vsctl show
 ```
