@@ -11,6 +11,8 @@ $ source openrc admin admin
 ```
 $ openstack project create General
 ```
+
+<p>
 +-------------+----------------------------------+
 | Field       | Value                            |
 +-------------+----------------------------------+
@@ -19,4 +21,4 @@ $ openstack project create General
 | id          | bb39b2d8b3b2468a8fb06f5572568956 |
 | name        | General                          |
 +-------------+----------------------------------+
-
+</p>
