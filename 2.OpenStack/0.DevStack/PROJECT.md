@@ -36,12 +36,12 @@ $ sudo ovs-vsctl show
 ```
 ## Vérifier configuration OVS
 
-|  Bridge    |  Utilitée  |
-|:----------:|:----------:|
-| br-ex      |            |
-| br-int     |            |
-| br-tun     |            |
-| ovs-system |            |
+|  Pont (Bridge) |  Utilitée                     |
+|:--------------:|:------------------------------|
+| br-ex          |                               |
+| br-int         |                               |
+| br-tun         |                               |
+| ovs-system     |  Modules Noyaux d'OVS (actif) |
 
 ```
 $ sudo ovs-vsctl show
