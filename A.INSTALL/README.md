@@ -35,12 +35,15 @@ http://docs.openstack.org/user-guide/common/cli_set_environment_variables_using_
 
 ```
 $ docker-machine --debug \
-  create --driver openstack \
-         --openstack-flavor-name m1.tiny \
-         --openstack-image-name "Ubuntu 14.04" \
-         --openstack-ssh-user ubuntu \
-         --openstack-sec-groups default \
-    INF1069
+   create --driver openstack \
+          --openstack-flavor-name m1.tiny \
+          --openstack-image-name "Ubuntu 14.04" \
+          --openstack-ssh-user ubuntu \
+          --openstack-sec-groups default  \
+          --openstack-floatingip-pool nova \
+          --openstack-nova-network \
+          --openstack-net-name nova \
+     INF1045
 ```
 ## Check if the VM is running
 

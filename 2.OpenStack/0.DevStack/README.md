@@ -7,6 +7,9 @@ Sur une machine ubuntu 16-.0.4
 Suivre les instructions en clonant le repo suivant 
 https://github.com/openstack-dev/devstack
 
+Sur une machine unique avec configuration reseau  
+http://docs.openstack.org/developer/devstack/guides/single-machine.html
+
 ```
 $ git checkout stable/juno
 $ ./stack.sh
@@ -16,6 +19,21 @@ $ ./stack.sh
 
 http://codybum.com/openstackinaction/
 
+## Setting du Dashboard
+
+* Autoriser tous les hosts à accéder au dashboard:
+
+```
+$ sudo vi /opt/stack/horizon/openstack_dashboard/local/local_settings.py
+```
+
+éditer:
+ALLOWED_HOSTS = ['*', ]
+
+* Redémarer apache2
+```
+$ sudo systemctl restart apache2
+```
 
 ## Newton Documentation
 

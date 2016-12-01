@@ -14,7 +14,7 @@ db = MySQLdb.connect( user='etudiants',
 
 cur = db.cursor()
 
-cur.execute("SELECT * FROM city")
+cur.execute("Select * nom_ville inner join nom_region on nom_ville.ville = nom_region.region;")
 
 for row in cur.fetchall():
     file_.write(str(row[0])+','+ row[1]+','+ str(row[2])+'\n')
