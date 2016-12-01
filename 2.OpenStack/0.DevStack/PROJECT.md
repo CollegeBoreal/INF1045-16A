@@ -76,6 +76,10 @@ Created a new network:
 | updated_at                | 2016-12-01T23:03:16Z                 |
 +---------------------------+--------------------------------------+
 ```
+Vérification:
+```
+$ openstack network list
+```
 
 ## Créer un sous-réseau interne
 ```
@@ -109,6 +113,10 @@ Created a new subnet:
 | updated_at        | 2016-12-01T23:05:02Z                               |
 +-------------------+----------------------------------------------------+
 ```
+Vérification:
+```
+$ openstack subnet list
+```
 
 ## Créer un router
 ```
@@ -139,6 +147,11 @@ Created a new router:
 | updated_at              | 2016-12-01T23:07:44Z                 |
 +-------------------------+--------------------------------------+
 ```
+Vérification:
+```
+$ openstack router list
+```
+
 
 # OpenVSwitch
 
