@@ -77,6 +77,39 @@ Created a new network:
 +---------------------------+--------------------------------------+
 ```
 
+## Créer un sous-réseau interne
+```
+$ neutron subnet-create --tenant-id bb39b2d8b3b2468a8fb06f5572568956 GENERAL_NETWORK 172.24.220.0/24
+```
+Retourne:
+```
+Created a new subnet:
++-------------------+----------------------------------------------------+
+| Field             | Value                                              |
++-------------------+----------------------------------------------------+
+| allocation_pools  | {"start": "172.24.220.2", "end": "172.24.220.254"} |
+| cidr              | 172.24.220.0/24                                    |
+| created_at        | 2016-12-01T23:05:02Z                               |
+| description       |                                                    |
+| dns_nameservers   |                                                    |
+| enable_dhcp       | True                                               |
+| gateway_ip        | 172.24.220.1                                       |
+| host_routes       |                                                    |
+| id                | 9e2a6697-7ddc-4f7d-8a59-b2acc0f384d1               |
+| ip_version        | 4                                                  |
+| ipv6_address_mode |                                                    |
+| ipv6_ra_mode      |                                                    |
+| name              |                                                    |
+| network_id        | db8714ed-ac3e-49a7-aec8-3b7e68cf33a5               |
+| project_id        | bb39b2d8b3b2468a8fb06f5572568956                   |
+| revision_number   | 2                                                  |
+| service_types     |                                                    |
+| subnetpool_id     |                                                    |
+| tenant_id         | bb39b2d8b3b2468a8fb06f5572568956                   |
+| updated_at        | 2016-12-01T23:05:02Z                               |
++-------------------+----------------------------------------------------+
+```
+
 # OpenVSwitch
 
 ## Vérifier configuration OVS
