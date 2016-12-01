@@ -152,6 +152,15 @@ Vérification:
 $ openstack router list
 ```
 
+## Rajout du sous-réseau au routeur
+```
+$ # neutron router-interface-add <router ID>  <subnet ID>
+$ neutron router-interface-add 19fe12e6-5bfe-4136-95ad-50ca3d4167ef  9e2a6697-7ddc-4f7d-8a59-b2acc0f384d1
+```
+Retourne:
+```
+Added interface 6a5ca1ea-747a-4b05-b89c-90f126243bbd to router 19fe12e6-5bfe-4136-95ad-50ca3d4167ef.
+```
 
 # OpenVSwitch
 
