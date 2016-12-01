@@ -110,6 +110,36 @@ Created a new subnet:
 +-------------------+----------------------------------------------------+
 ```
 
+## Créer un router
+```
+neutron router-create --tenant-id bb39b2d8b3b2468a8fb06f5572568956 GENERAL_ROUTER
+```
+Retourne:
+```
+Created a new router:
++-------------------------+--------------------------------------+
+| Field                   | Value                                |
++-------------------------+--------------------------------------+
+| admin_state_up          | True                                 |
+| availability_zone_hints |                                      |
+| availability_zones      |                                      |
+| created_at              | 2016-12-01T23:07:44Z                 |
+| description             |                                      |
+| distributed             | False                                |
+| external_gateway_info   |                                      |
+| flavor_id               |                                      |
+| ha                      | False                                |
+| id                      | 19fe12e6-5bfe-4136-95ad-50ca3d4167ef |
+| name                    | GENERAL_ROUTER                       |
+| project_id              | bb39b2d8b3b2468a8fb06f5572568956     |
+| revision_number         | 2                                    |
+| routes                  |                                      |
+| status                  | ACTIVE                               |
+| tenant_id               | bb39b2d8b3b2468a8fb06f5572568956     |
+| updated_at              | 2016-12-01T23:07:44Z                 |
++-------------------------+--------------------------------------+
+```
+
 # OpenVSwitch
 
 ## Vérifier configuration OVS
