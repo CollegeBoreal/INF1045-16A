@@ -43,7 +43,7 @@ Retourne:
 
 ## Créer un réseau interne
 ```
-$ neutron net-create --tenant-id bb39b2d8b3b2468a8fb06f5572568956 INTERNAL_NETWORK
+$ neutron net-create --tenant-id bb39b2d8b3b2468a8fb06f5572568956 GENERAL_NETWORK
 ```
 Retourne:
 ```
@@ -54,18 +54,18 @@ Created a new network:
 | admin_state_up            | True                                 |
 | availability_zone_hints   |                                      |
 | availability_zones        |                                      |
-| created_at                | 2016-12-01T22:59:11Z                 |
+| created_at                | 2016-12-01T23:03:16Z                 |
 | description               |                                      |
-| id                        | 201a3d60-1fab-4d36-93fb-bc2a1216e030 |
+| id                        | db8714ed-ac3e-49a7-aec8-3b7e68cf33a5 |
 | ipv4_address_scope        |                                      |
 | ipv6_address_scope        |                                      |
 | mtu                       | 1450                                 |
-| name                      | INTERNAL_NETWORK                     |
+| name                      | GENERAL_NETWORK                      |
 | port_security_enabled     | True                                 |
 | project_id                | bb39b2d8b3b2468a8fb06f5572568956     |
 | provider:network_type     | vxlan                                |
 | provider:physical_network |                                      |
-| provider:segmentation_id  | 65                                   |
+| provider:segmentation_id  | 26                                   |
 | revision_number           | 3                                    |
 | router:external           | False                                |
 | shared                    | False                                |
@@ -73,7 +73,7 @@ Created a new network:
 | subnets                   |                                      |
 | tags                      |                                      |
 | tenant_id                 | bb39b2d8b3b2468a8fb06f5572568956     |
-| updated_at                | 2016-12-01T22:59:11Z                 |
+| updated_at                | 2016-12-01T23:03:16Z                 |
 +---------------------------+--------------------------------------+
 ```
 
