@@ -36,9 +36,12 @@ $ sudo ovs-vsctl show
 ```
 ## Vérifier configuration OVS
 
-|  Bridge  |  Utilitée  |
-|:--------:|:----------:|
-| br-ex    |            |
+|  Bridge    |  Utilitée  |
+|:----------:|:----------:|
+| br-ex      |            |
+| br-int     |            |
+| br-tun     |            |
+| ovs-system |            |
 
 ```
 $ sudo ovs-vsctl show
