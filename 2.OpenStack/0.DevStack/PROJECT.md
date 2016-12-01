@@ -41,6 +41,61 @@ Retourne:
 +----------------------------------+--------------------+
 ```
 
+## Créer un utilisateur
+```
+$ openstack user create --password openstack1 --project General --email=johndoe@testco.com johndoe
+```
+Retourne:
+```
++------------+----------------------------------+
+| Field      | Value                            |
++------------+----------------------------------+
+| email      | johndoe@testco.com               |
+| enabled    | True                             |
+| id         | fc6f210ea633406a978e83010af6b351 |
+| name       | johndoe                          |
+| project_id | bb39b2d8b3b2468a8fb06f5572568956 |
+| username   | johndoe                          |
++------------+----------------------------------+
+```
+Vérification:
+```
+$ openstack user list
+```
+
+## Assigner un role à l'utilisateur
+```
+$ openstack role list
+```
+Retourne:
+```
++----------------------------------+---------------+
+| ID                               | Name          |
++----------------------------------+---------------+
+| 1bd192821845403db911dad0e88f75fa | anotherrole   |
+| 361dc1e8ebbe406e91b745b492056ad9 | service       |
+| 6654acbdae4d4c24a622fe01f2a4dc0e | Member        |
+| 9fe2ff9ee4384b1894a90878d3e92bab | _member_      |
+| c8a2a58216ab4673a25c9e54029473fb | admin         |
+| deb17ed230d84ec7b75c24603c336ee5 | ResellerAdmin |
++----------------------------------+---------------+
+```
+Retourne:
+```
+$ openstack role add --project General --user johndoe Member
+```
+Retourne:
+```
++-----------+----------------------------------+
+| Field     | Value                            |
++-----------+----------------------------------+
+| domain_id | None                             |
+| id        | 6654acbdae4d4c24a622fe01f2a4dc0e |
+| name      | Member                           |
++-----------+----------------------------------+
+```
+
+
 ## Créer un réseau interne
 ```
 $ neutron net-create --tenant-id bb39b2d8b3b2468a8fb06f5572568956 GENERAL_NETWORK
