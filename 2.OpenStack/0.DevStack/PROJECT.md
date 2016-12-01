@@ -35,6 +35,13 @@ $ openstack project list
 $ sudo ovs-vsctl show
 ```
 ## Vérifier configuration OVS
+
+|  Bridge  |  Utilitée  |
+|:--------:|:----------:|
+| br-ex    |            |
+
 ```
 $ sudo ovs-vsctl show
 ```
+
+
