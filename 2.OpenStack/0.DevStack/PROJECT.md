@@ -277,7 +277,9 @@ Retourne:
 +--------------------------------------+------+-------------------+-------------------------------------------------------------------------------------+
 ```
 
-# OpenVSwitch
+# Neutron
+
+## OpenVSwitch
 
 ## Vérifier configuration OVS
 ```
@@ -292,9 +294,58 @@ $ sudo ovs-vsctl show
 | br-tun         |                               |
 | ovs-system     |  Modules Noyaux d'OVS (actif) |
 
+## Consulter les 'Linux Network Namespaces'
+
 ```
-$ sudo ovs-vsctl show
+$ sudo ip netns list
 ```
+Retourne:
+```
+qrouter-19fe12e6-5bfe-4136-95ad-50ca3d4167ef
+qdhcp-db8714ed-ac3e-49a7-aec8-3b7e68cf33a5
+qrouter-e64e5e35-1d4a-4604-8bc7-2888bbba3c25
+qdhcp-77b611a4-08b6-43dd-a31d-e3d2827a051c
+```
+
+## Exécuter une commande sur un namespace particulier
+
+* Example la configuration réseau d'un routeur particulier
+```
+$ # sudo ip netns exec <NameSpace ID> <Commande>
+$ sudo ip netns exec qrouter-19fe12e6-5bfe-4136-95ad-50ca3d4167ef ifconfig -a
+```
+Retourne:
+```
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+qg-d4455c51-c5 Link encap:Ethernet  HWaddr fa:16:3e:4d:9d:e8  
+          inet addr:10.13.237.92  Bcast:10.13.237.95  Mask:255.255.255.240
+          inet6 addr: fe80::f816:3eff:fe4d:9de8/64 Scope:Link
+          inet6 addr: 2001:db8::a/64 Scope:Global
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:1 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:21 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1 
+          RX bytes:28 (28.0 B)  TX bytes:1510 (1.5 KB)
+
+qr-6a5ca1ea-74 Link encap:Ethernet  HWaddr fa:16:3e:6e:24:02  
+          inet addr:172.24.220.1  Bcast:172.24.220.255  Mask:255.255.255.0
+          inet6 addr: fe80::f816:3eff:fe6e:2402/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1450  Metric:1
+          RX packets:25 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:13 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1 
+          RX bytes:3378 (3.3 KB)  TX bytes:990 (990.0 B)
+```
+
+
 
 # Glance
 
