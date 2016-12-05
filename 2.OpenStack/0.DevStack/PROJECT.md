@@ -346,7 +346,7 @@ qr-6a5ca1ea-74 Link encap:Ethernet  HWaddr fa:16:3e:6e:24:02
 ```
 
 ## Sortir du host
-* Modifier les paramètres du noyau
+* Modifier les paramètres du noyau permettant le 'forwarding' des routes
 ```
 $ sudo vi /etc/sysctl.conf
 
