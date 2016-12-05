@@ -296,4 +296,12 @@ $ sudo ovs-vsctl show
 $ sudo ovs-vsctl show
 ```
 
+# Glance
+
+## Installer ubuntu 16.04 Cloud
+
+```
+$ wget http://cloud-images.ubuntu.com/xenial/current/xenial-server-cloudimg-amd64-disk1.img
+```
+
 
