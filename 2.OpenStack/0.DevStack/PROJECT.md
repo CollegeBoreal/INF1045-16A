@@ -345,6 +345,20 @@ qr-6a5ca1ea-74 Link encap:Ethernet  HWaddr fa:16:3e:6e:24:02
           RX bytes:3378 (3.3 KB)  TX bytes:990 (990.0 B)
 ```
 
+## Sortir du host
+* Modifier /etc/sysctl.conf
+```
+$ sudo vi /etc/sysctl.conf
+
+net.ipv4.conf.default.rp_filter=0
+net.ipv4.conf.all.rp_filter=0
+net.ipv4.ip_forward=1
+```
+* valider la configuration
+```
+$ sudo sysctl -p
+```
+
 
 
 # Glance
