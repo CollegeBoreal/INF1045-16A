@@ -1,6 +1,8 @@
 # Documentation
 http://docs.openstack.org/admin-guide/networking-use.html   
-http://docs.openstack.org/user-guide/cli-create-and-manage-networks.html
+http://docs.openstack.org/user-guide/cli-create-and-manage-networks.html  
+http://blogs.igalia.com/dpino/2016/04/10/network-namespaces/  
+
 
 # Créer son propre projet
 
