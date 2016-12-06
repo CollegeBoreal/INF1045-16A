@@ -413,7 +413,7 @@ Retourne:
 
 # Lancer l'instance
 ```
-nova --debug boot --flavor m1.small --image Ubuntu-16.04 --nic net-id=db8714ed-ac3e-49a7-aec8-3b7e68cf33a5 --key-name testkey  instancetest1
+nova --debug boot --flavor m1.small --image Ubuntu-16.04 --nic net-name=GENERAL_NETWORK --key-name testkey  instancetest1
 $ ssh -i <KEY_PAIR> ubuntu@<INSTANCE_FLOATING_IP>
 ```
 
