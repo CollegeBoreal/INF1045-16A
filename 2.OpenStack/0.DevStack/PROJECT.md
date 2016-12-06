@@ -413,10 +413,55 @@ Retourne:
 
 # Lancer l'instance
 ```
-nova --debug boot --flavor m1.small --image Ubuntu-16.04 --nic net-name=GENERAL_NETWORK --key-name testkey  instancetest1
+$ nova --debug boot --flavor m1.small --image Ubuntu-16.04 --nic net-name=GENERAL_NETWORK --key-name testkey  instancetest1
+```
+
+# verifier l'instance
+```
+$ nova show  instancetest1
+```
+Retourne:
+```
++--------------------------------------+----------------------------------------------------------+
+| Property                             | Value                                                    |
++--------------------------------------+----------------------------------------------------------+
+| GENERAL_NETWORK network              | 172.24.220.5                               |
+| OS-DCF:diskConfig                    | MANUAL                                                   |
+| OS-EXT-AZ:availability_zone          | nova                                                     |
+| OS-EXT-STS:power_state               | 1                                                        |
+| OS-EXT-STS:task_state                | -                                                        |
+| OS-EXT-STS:vm_state                  | active                                                   |
+| OS-SRV-USG:launched_at               | 2016-12-06T19:55:49.000000                               |
+| OS-SRV-USG:terminated_at             | -                                                        |
+| accessIPv4                           |                                                          |
+| accessIPv6                           |                                                          |
+| config_drive                         |                                                          |
+| created                              | 2016-12-06T19:55:42Z                                     |
+| description                          | -                                                        |
+| flavor                               | m1.small (2)                                             |
+| hostId                               | f132e1514e81cbbeb4df94a6779f2732fb47ee4b634a35c843803ba9 |
+| id                                   | 69e475aa-f3ec-4dd9-bc04-28c52d515583                     |
+| image                                | Ubuntu-16.04 (ceaf26e9-edc6-4048-980f-3a0d25202b85)      |
+| key_name                             | testkey                                                  |
+| locked                               | False                                                    |
+| metadata                             | {}                                                       |
+| name                                 | instancetest1                                            |
+| os-extended-volumes:volumes_attached | []                                                       |
+| progress                             | 0                                                        |
+| security_groups                      | default                                                  |
+| status                               | ACTIVE                                                   |
+| tags                                 | []                                                       |
+| tenant_id                            | bb39b2d8b3b2468a8fb06f5572568956                         |
+| updated                              | 2016-12-06T19:55:49Z                                     |
+| user_id                              | fc6f210ea633406a978e83010af6b351                         |
++--------------------------------------+----------------------------------------------------------+
+```
+# entrer dans l'instance
+```
 $ ssh -i <KEY_PAIR> ubuntu@<INSTANCE_FLOATING_IP>
 ```
 
+# Rajouter une route
 ```
-sudo ip netns exec qrouter-1faa6c68-7719-4a2c-b92c-4961cac27ada ip r add 38.73.3.120/29 protocol kernel scope link via 38.73.3.121
+$ sudo ip netns exec qrouter-1faa6c68-7719-4a2c-b92c-4961cac27ada ip r add 38.73.3.120/29 protocol kernel scope link via 38.73.3.121
 ```
