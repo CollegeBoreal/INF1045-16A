@@ -411,8 +411,10 @@ Retourne:
 +------------------+------------------------------------------------------+
 ```
 
+```
 $ nova boot --flavor m1.tiny --image Ubuntu-16.04 --nic net-id=<NET_ID> --key-name <KEY_PAIR> instancetest1
 $ ssh -i <KEY_PAIR> ubuntu@<INSTANCE_FLOATING_IP>
+```
 
 ```
 sudo ip netns exec qrouter-1faa6c68-7719-4a2c-b92c-4961cac27ada ip r add 38.73.3.120/29 protocol kernel scope link via 38.73.3.121
