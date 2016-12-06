@@ -456,6 +456,12 @@ Retourne:
 | user_id                              | fc6f210ea633406a978e83010af6b351                         |
 +--------------------------------------+----------------------------------------------------------+
 ```
+
+# Associer une PI flottante
+```
+$ nova floating-ip-associate instancetest1 10.13.237.91
+```
+
 # entrer dans l'instance
 ```
 $ ssh -i <KEY_PAIR> ubuntu@<INSTANCE_FLOATING_IP>
