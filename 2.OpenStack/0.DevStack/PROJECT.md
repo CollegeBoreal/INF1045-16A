@@ -373,4 +373,43 @@ $ sudo sysctl -p
 $ wget http://cloud-images.ubuntu.com/xenial/current/xenial-server-cloudimg-amd64-disk1.img
 ```
 
+## Installer l'image d'ubuntu 16.04 Cloud dans glance
+
+```
+$ openstack image create \
+         --disk-format qcow2 \
+         --container-format bare \
+         --public \
+         --file ./xenial-server-cloudimg-amd64-disk1.img \
+         Ubuntu-16.04
+```
+Retourne:
+```
++------------------+------------------------------------------------------+
+| Field            | Value                                                |
++------------------+------------------------------------------------------+
+| checksum         | 35fd929b17d6c3532d04aa66e3d6ab7e                     |
+| container_format | bare                                                 |
+| created_at       | 2016-12-06T18:46:55Z                                 |
+| disk_format      | qcow2                                                |
+| file             | /v2/images/ceaf26e9-edc6-4048-980f-3a0d25202b85/file |
+| id               | ceaf26e9-edc6-4048-980f-3a0d25202b85                 |
+| min_disk         | 0                                                    |
+| min_ram          | 0                                                    |
+| name             | Ubuntu-16.04                                         |
+| owner            | 26c2a062b4e84ad7bd81b7efc1974527                     |
+| protected        | False                                                |
+| schema           | /v2/schemas/image                                    |
+| size             | 315228160                                            |
+| status           | active                                               |
+| tags             |                                                      |
+| updated_at       | 2016-12-06T18:47:03Z                                 |
+| virtual_size     | None                                                 |
+| visibility       | public                                               |
++------------------+------------------------------------------------------+
+```
+
+$ nova boot --flavor m1.tiny --image Ubuntu-16.04 --nic net-id=<NET_ID> --key-name <KEY_PAIR> instancetest1
+$ ssh -i <KEY_PAIR> ubuntu@<INSTANCE_FLOATING_IP>
+
 
