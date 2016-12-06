@@ -116,3 +116,22 @@ Retourne:
                 type: internal
     ovs_version: "2.5.0"
 ```
+```
+$ sudo ovs-ofctl dump-flows br-tun
+```
+Retourne:
+```
+NXST_FLOW reply (xid=0x4):
+ cookie=0xba7f503029ce9008, duration=12257.804s, table=0, n_packets=6676, n_bytes=301928, idle_age=0, priority=1,in_port=1 actions=resubmit(,2)
+ cookie=0xba7f503029ce9008, duration=12257.802s, table=0, n_packets=0, n_bytes=0, idle_age=12257, priority=0 actions=drop
+ cookie=0xba7f503029ce9008, duration=12257.800s, table=2, n_packets=0, n_bytes=0, idle_age=12257, priority=0,dl_dst=00:00:00:00:00:00/01:00:00:00:00:00 actions=resubmit(,20)
+ cookie=0xba7f503029ce9008, duration=12257.797s, table=2, n_packets=6676, n_bytes=301928, idle_age=0, priority=0,dl_dst=01:00:00:00:00:00/01:00:00:00:00:00 actions=resubmit(,22)
+ cookie=0xba7f503029ce9008, duration=12257.796s, table=3, n_packets=0, n_bytes=0, idle_age=12257, priority=0 actions=drop
+ cookie=0xba7f503029ce9008, duration=12253.830s, table=4, n_packets=0, n_bytes=0, idle_age=12253, priority=1,tun_id=0x3c actions=mod_vlan_vid:1,resubmit(,10)
+ cookie=0xba7f503029ce9008, duration=12253.826s, table=4, n_packets=0, n_bytes=0, idle_age=12253, priority=1,tun_id=0x1a actions=mod_vlan_vid:3,resubmit(,10)
+ cookie=0xba7f503029ce9008, duration=12257.795s, table=4, n_packets=0, n_bytes=0, idle_age=12257, priority=0 actions=drop
+ cookie=0xba7f503029ce9008, duration=12257.794s, table=6, n_packets=0, n_bytes=0, idle_age=12257, priority=0 actions=drop
+ cookie=0xba7f503029ce9008, duration=12257.792s, table=10, n_packets=0, n_bytes=0, idle_age=12257, priority=1 actions=learn(table=20,hard_timeout=300,priority=1,cookie=0xba7f503029ce9008,NXM_OF_VLAN_TCI[0..11],NXM_OF_ETH_DST[]=NXM_OF_ETH_SRC[],load:0->NXM_OF_VLAN_TCI[],load:NXM_NX_TUN_ID[]->NXM_NX_TUN_ID[],output:OXM_OF_IN_PORT[]),output:1
+ cookie=0xba7f503029ce9008, duration=12257.789s, table=20, n_packets=0, n_bytes=0, idle_age=12257, priority=0 actions=resubmit(,22)
+ cookie=0xba7f503029ce9008, duration=12257.787s, table=22, n_packets=6676, n_bytes=301928, idle_age=0, priority=0 actions=drop
+ ```
