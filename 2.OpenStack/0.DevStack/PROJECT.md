@@ -467,6 +467,15 @@ $ nova floating-ip-associate instancetest1 10.13.237.91
 $ ssh -i <KEY_PAIR> ubuntu@<INSTANCE_FLOATING_IP>
 ```
 
+# Acceder a une instance
+```
+$ sudo ip netns exec qdhcp-db8714ed-ac3e-49a7-aec8-3b7e68cf33a5 ssh -i testkey.pem ubuntu@172.24.220.5
+```
+
+```
+$ sudo ip netns exec qdhcp-db8714ed-ac3e-49a7-aec8-3b7e68cf33a5 ssh cirros@172.24.220.12
+```
+
 # Rajouter une route
 ```
 $ sudo ip netns exec qrouter-1faa6c68-7719-4a2c-b92c-4961cac27ada ip r add 38.73.3.120/29 protocol kernel scope link via 38.73.3.121
