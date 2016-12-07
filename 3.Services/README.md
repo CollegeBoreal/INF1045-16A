@@ -1,7 +1,7 @@
 # Services
 
 ## netns
-Linux Network NameSpaces
+[Linux Network NameSpaces](http://blog.scottlowe.org/2013/09/04/introducing-linux-network-namespaces)
 
 ## Microsoft Active Directory
 
