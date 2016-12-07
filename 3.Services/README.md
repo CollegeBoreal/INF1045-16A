@@ -1,7 +1,10 @@
 # Services
 
-## netns
+## Linux NameSpaces - netns
 [Linux Network NameSpaces](http://blog.scottlowe.org/2013/09/04/introducing-linux-network-namespaces)
+
+## dnsmasq
+https://florent.peterschmitt.fr/linux-kernel-network-namespaces-dnsmasq.html
 
 ## Microsoft Active Directory
 
