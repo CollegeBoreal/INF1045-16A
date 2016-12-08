@@ -111,5 +111,22 @@ default via 10.252.0.254 dev lab1 linkdown
 ```
 $ sudo ip a add 10.252.0.254/24 dev lab0
 $ sudo ip l set jun0 up
+```
+Verification:
+```
+$ ifconfig -a lab0; ifconfig -a lab1
+lab0      Link encap:Ethernet  HWaddr ce:60:a8:61:6f:86  
+          inet addr:10.252.0.254  Bcast:0.0.0.0  Mask:255.255.255.0
+          BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+lab1: error fetching interface information: Device not found
+```
+On authorise le traffic 
+```
 $ sudo iptables -t nat -A POSTROUTING -s 10.252.0.0/24 -j MASQUERADE
 ```
+
