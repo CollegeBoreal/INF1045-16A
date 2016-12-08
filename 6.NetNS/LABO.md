@@ -15,10 +15,22 @@ labo
 ```
 
 Mais où sont passées nos interfaces ! ;-)
-
 ```
-$ sudo ip netns exec labo ip l
+$ sudo ip netns exec labo ip link
+1: lo: <LOOPBACK> mtu 65536 qdisc noop state DOWN mode DEFAULT group default qlen 1
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+```
+Que dire de la sécurité?
+```
 $ sudo ip netns exec labo iptables -nL
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination   
 ```
 
 ## On créer une paire d’interfaces :
