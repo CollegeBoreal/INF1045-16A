@@ -132,5 +132,6 @@ $ sudo iptables -t nat -A POSTROUTING -s 10.252.0.0/24 -j MASQUERADE
 
 ## Nettoie
 ```
-sudo ip netns del labo
+$ sudo ip netns del labo
+$ sudo ip link delete lab0
 ```
