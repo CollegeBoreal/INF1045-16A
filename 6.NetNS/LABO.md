@@ -110,7 +110,7 @@ default via 10.252.0.254 dev lab1 linkdown
 
 ```
 $ sudo ip a add 10.252.0.254/24 dev lab0
-$ sudo ip l set jun0 up
+$ sudo ip l set lab0 up
 ```
 Verification:
 ```
