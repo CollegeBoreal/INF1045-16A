@@ -491,3 +491,17 @@ $ sudo ip link set br-ex up
 $ sudo ip link set br-int up
 $ sudo ip link set br-tun up
 ```
+# Verifier la route
+```
+$ ip route
+default via 10.13.237.1 dev enp9s0 onlink 
+10.13.237.0/25 dev enp9s0  proto kernel  scope link  src 10.13.237.4 
+10.13.237.80/28 dev br-ex  proto kernel  scope link  src 10.13.237.81 
+10.252.0.0/24 dev lab0  proto kernel  scope link  src 10.252.0.254 
+192.168.122.0/24 dev virbr0  proto kernel  scope link  src 192.168.122.1 linkdown 
+# Allouer une adresse au bridge externe et le rendre disponible
+```
+# Ouvrir le chemin
+```
+$ sudo iptables -t nat -A POSTROUTING -s 10.13.237.80/28 -j MASQUERADE
+```
