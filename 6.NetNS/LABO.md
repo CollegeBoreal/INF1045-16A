@@ -6,6 +6,16 @@
 ```
 $ sudo ip netns add labo
 ```
+Verification:
+```
+$ sudo ip netns
+```
+Retourne:
+```
+labo
+<...>
+```
+
 Mais où sont passées nos interfaces ! ;-)
 
 ```
