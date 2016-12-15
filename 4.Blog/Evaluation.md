@@ -5,28 +5,28 @@
 
 -[*][Noté]
 
-    -[*] Prérequis - Openstack  [LIN]
+-[*] Prérequis - Openstack  [LIN]
 
-        1) Installer un serveur Linux - Linux 16.04.1 LTS (Xenial Xerus)
-        2) Créer un nuage en mode développement (devstack - Newton)
+    1) Installer un serveur Linux - Linux 16.04.1 LTS (Xenial Xerus)
+    2) Créer un nuage en mode développement (devstack - Newton)
 
-    -[*] Configurer un nuage - Openstack  [OPS] 
+-[*] Configurer un nuage - Openstack  [OPS] 
 
-        1) Créer un projet (Tenant) avec utilisateurs (au moins un)
-        2) Attacher un reseau externe au projet (fournir le schéma du réseau proposé)
-        3) installer une image de votre choix (compatible Docker)
-            Note: Se référer à OpenStack in Action - chapitre 3
+    1) Créer un projet (Tenant) avec utilisateurs (au moins un)
+    2) Attacher un reseau externe au projet (fournir le schéma du réseau proposé)
+    3) installer une image de votre choix (compatible Docker)
+        Note: Se référer à OpenStack in Action - chapitre 3
 
-    -[ ] Lancer un service - Docker (Optionnel) 
-        * Créer une machine virtuelle
-        * Créer une simple orchestration (Docker Compose)
-        * Au moins deux microservices sont requis (web,DB) ou (web,media server), ...
+-[ ] Lancer un service - Docker (Optionnel) 
+    * Créer une machine virtuelle
+    * Créer une simple orchestration (Docker Compose)
+    * Au moins deux microservices sont requis (web,DB) ou (web,media server), ...
 
-    -[ ] Recherche et attitude envers l'adversité [REC]
+-[ ] Recherche et attitude envers l'adversité [REC]
 
-        1. Recherche Efficace de l'information
-        2. Persistent dans sa recherche
-        3. Ouvert à la nouveauté
+    1. Recherche Efficace de l'information
+    2. Persistent dans sa recherche
+    3. Ouvert à la nouveauté
 
 ## Notation 
 
@@ -47,5 +47,5 @@
 
 # IRCodes
 
-![Mississauga](http://10.13.237.2)
+![Mississauga](http://10.13.237.3)
 
