@@ -98,6 +98,10 @@
         Bien, 
         
     4. Neutron
-        
+
+-- Topologie
+![alt tag](https://github.com/CollegeBoreal/INF1045-16A/blob/master/4.Blog/IR_Neutron2.png)
+-- Graphique
+![alt tag](https://github.com/CollegeBoreal/INF1045-16A/blob/master/4.Blog/IR_Neutron2.png)
         
     5. Installer une image
