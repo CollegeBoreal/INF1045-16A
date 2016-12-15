@@ -120,6 +120,7 @@
         
     4. Glance
         Bien, manque d'explications
+        L'instance Ubuntu est en erreur et n'ayant pas de clés j'ai quand même essayé la commande suivante
         
         stack@mississauga:~$ sudo ip netns exec qdhcp-a14ac27f-0ed8-4c44-87a9-0b13e6198029 ssh ubuntu@172.16.0.1
         ssh: connect to host 172.16.0.1 port 22: Connection refused
@@ -143,3 +144,5 @@
                   collisions:0 txqueuelen:1 
                   RX bytes:2193248 (2.1 MB)  TX bytes:2174 (2.1 KB)
 
+### Graphique
+![alt tag](https://github.com/CollegeBoreal/INF1045-16A/blob/master/4.Blog/IR_Glance.png)
