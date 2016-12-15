@@ -16,7 +16,7 @@
     2) Attacher un reseau externe au projet (fournir le schéma du réseau proposé)
     3) installer une image de votre choix (compatible Docker)
     4) Créer une machine virtuelle
-        Note: Se référer à OpenStack in Action - chapitre 3
+        Note: Se référer à [OpenStack in Action](https://www.manning.com/books/openstack-in-action) - chapitre 3
 
 -[ ] Lancer un service - Docker (Optionnel) 
 
