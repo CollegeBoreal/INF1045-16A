@@ -17,7 +17,7 @@ Le projet consiste à écrire un blog réalisant les aspects suivants du cours:
 1) Créer un projet (Tenant) avec utilisateurs (au moins un)  
 2) Attacher un reseau externe au projet (fournir le schéma du réseau proposé)  
 3) installer une image de votre choix (compatible Docker)  
-Note: Se référer à OpenStack in Action - chapitre 3  
+Note: Se référer à [OpenStack in Action](https://www.manning.com/books/openstack-in-action) - chapitre 3  
 
 ## (4) Lancer un service - Docker
 * Creer une machine virtuelle 
