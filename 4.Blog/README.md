@@ -29,6 +29,6 @@ Note:
 Le projet se fera sur plusieurs semaines. 
 Chaque semaine un état sur la progression sera fait. (Jeudi de chaque semaine)
 L'état de la progression doit etre fournie sur le blog choisi.
-Des pénalités peuvent être encourrues sur le blog ne progresse pas. (25% par semaines)
+Des pénalités peuvent être encourues si le blog ne progresse pas. (25% par semaines)
 Le blog doit être présenté au 1er decembre.
 ```
