@@ -30,14 +30,19 @@
     2. Persistent dans sa recherche
     3. Ouvert à la nouveauté
 
+-[*] Blog [BLG]
+
+    1. Clarté de l'information
+    2. Bonne présentation
+
 ## Notation 
 
 (1 Faible - 5 Tres Bon)
 
-| ID  |LIN1|LIN2|OPS1|OPS2|OPS3|REC1|REC2|REC3|  Comments    (8 * 5 = 40)             |
-|----:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|---------------------------------------|  
-| 6ix | 4  | 3  | 2  |  4 |  3 | 4  |  3 |  3 |                                       |  
-| IR  | 4  | 3  | 2  |  2 |  2 | 2  |  2 |  2 |                                       |  
+| ID  |LIN1|LIN2|OPS1|OPS2|OPS3|REC1|REC2|REC3|BLG1|BLG2|  Comments    (8 * 5 = 40)             |
+|----:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|---------------------------------------|  
+| 6ix | 4  | 3  | 2  |  4 |  3 | 4  |  3 |  3 |  3 |  3 |                                       |  
+| IR  | 4  | 3  | 2  |  2 |  2 | 2  |  2 |  2 |  3 |  3 |                                       |  
 
 --
 
