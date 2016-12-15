@@ -15,14 +15,16 @@
     1) Créer un projet (Tenant) avec utilisateurs (au moins un)
     2) Attacher un reseau externe au projet (fournir le schéma du réseau proposé)
     3) installer une image de votre choix (compatible Docker)
+    4) Créer une machine virtuelle
         Note: Se référer à OpenStack in Action - chapitre 3
 
 -[ ] Lancer un service - Docker (Optionnel) 
-    * Créer une machine virtuelle
-    * Créer une simple orchestration (Docker Compose)
+
+    * Créer une machine virtuelle (docker-machine)
+    * Créer une simple orchestration (docker-compose)
     * Au moins deux microservices sont requis (web,DB) ou (web,media server), ...
 
--[ ] Recherche et attitude envers l'adversité [REC]
+-[*] Recherche et attitude envers l'adversité [REC]
 
     1. Recherche Efficace de l'information
     2. Persistent dans sa recherche
