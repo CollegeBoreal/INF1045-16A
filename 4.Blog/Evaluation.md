@@ -68,7 +68,7 @@
             qrouter-079bac2e-6862-4ebb-ad46-e0d14417ef18
             qdhcp-641e59da-142d-4a25-8abf-6124d5101c1d
 
-        * Par conséquent l'accès àa l'instance est impossible            
+        * Par conséquent l'accès à l'instance est impossible            
          $ sudo ip netns exec qdhcp-3df057b6-4d80-4e85-8466-cd90671dd4cb ssh cirros@172.16.220.14
          ssh: connect to host 172.16.220.14 port 22: No route to host
 
@@ -106,7 +106,8 @@
         * Rappel: Toujours appliquer les commandes en seconnectant à l'utilisateur stack
         Bien, 
         
-    4. Neutron
+    3. Neutron
+        Bien, un peu plus d'explications
 
 -- 
 
@@ -117,4 +118,28 @@
 ### Graphique
 ![alt tag](https://github.com/CollegeBoreal/INF1045-16A/blob/master/4.Blog/IR_Neutron1.png)
         
-    5. Installer une image
+    4. Glance
+        Bien, manque d'explications
+        
+        stack@mississauga:~$ sudo ip netns exec qdhcp-a14ac27f-0ed8-4c44-87a9-0b13e6198029 ssh ubuntu@172.16.0.1
+        ssh: connect to host 172.16.0.1 port 22: Connection refused
+        stack@mississauga:~$ sudo ip netns exec qdhcp-a14ac27f-0ed8-4c44-87a9-0b13e6198029 ifconfig -a
+        lo        Link encap:Local Loopback  
+                  inet addr:127.0.0.1  Mask:255.0.0.0
+                  inet6 addr: ::1/128 Scope:Host
+                  UP LOOPBACK RUNNING  MTU:65536  Metric:1
+                  RX packets:14 errors:0 dropped:0 overruns:0 frame:0
+                  TX packets:14 errors:0 dropped:0 overruns:0 carrier:0
+                  collisions:0 txqueuelen:1 
+                  RX bytes:1424 (1.4 KB)  TX bytes:1424 (1.4 KB)
+
+        tapaccb9f87-08 Link encap:Ethernet  HWaddr fa:16:3e:24:38:89  
+                  inet addr:172.16.0.2  Bcast:172.16.0.255  Mask:255.255.255.0
+                  inet6 addr: fd24:7104:1ac5:0:f816:3eff:fe24:3889/64 Scope:Global
+                  inet6 addr: fe80::f816:3eff:fe24:3889/64 Scope:Link
+                  UP BROADCAST RUNNING MULTICAST  MTU:1450  Metric:1
+                  RX packets:21091 errors:0 dropped:0 overruns:0 frame:0
+                  TX packets:41 errors:0 dropped:0 overruns:0 carrier:0
+                  collisions:0 txqueuelen:1 
+                  RX bytes:2193248 (2.1 MB)  TX bytes:2174 (2.1 KB)
+
