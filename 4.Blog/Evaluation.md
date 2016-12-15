@@ -39,7 +39,7 @@
 
 (1 Faible - 5 Tres Bon)
 
-| ID  |LIN1|LIN2|OPS1|OPS2|OPS3|REC1|REC2|REC3|BLG1|BLG2| Points (10 * 5 = 40)             |
+| ID  |LIN1|LIN2|OPS1|OPS2|OPS3|REC1|REC2|REC3|BLG1|BLG2| Points (10 * 5 = 50)             |
 |----:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|----------------------------------|  
 |     |    |    |    |    |    |    |    |    |    |    | Comments                         |
 | 6ix | 4  | 3  | 2  |  4 |  3 | 4  |  3 |  3 |  3 |  3 |                                  |  
