@@ -71,6 +71,9 @@
         * Par conséquent l'accès àa l'instance est impossible            
          $ sudo ip netns exec qdhcp-3df057b6-4d80-4e85-8466-cd90671dd4cb ssh cirros@172.16.220.14
          ssh: connect to host 172.16.220.14 port 22: No route to host
+         
+![alt tag](https://github.com/CollegeBoreal/INF1045-16A/blob/master/4.Blog/6ix_Neutron1.png)
+![alt tag](https://github.com/CollegeBoreal/INF1045-16A/blob/master/4.Blog/6ix_Neutron2.png)
         
     5. Installer une image
         * Il fallait installer une image Ubuntu (compatible docker)
