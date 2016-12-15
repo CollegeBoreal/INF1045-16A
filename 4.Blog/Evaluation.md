@@ -42,18 +42,19 @@
 | ID  |LIN1|LIN2|OPS1|OPS2|OPS3|REC1|REC2|REC3|BLG1|BLG2| Points (10 * 5 = 50)             |
 |----:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|----------------------------------|  
 |     |    |    |    |    |    |    |    |    |    |    | Comments                         |
-| 6ix | 5  | 5  | 2  |  4 |  3 | 4  |  3 |  3 |  3 |  3 |                                  |  
-|     |    |    |    |    |    |    |    |    |    |    | Comments                         |
-|     |    |    |    |    |    |    |    |    |    |    | Comments                         |
-| IR  | 5  | 5  | 2  |  2 |  2 | 2  |  2 |  2 |  3 |  3 |                                  |  
-|     |    |    |    |    |    |    |    |    |    |    | Comments                         |
-|     |    |    |    |    |    |    |    |    |    |    | Comments                         |
+| 6ix | 5  | 5  | 2  |  4 |  3 | 4  |  3 |  3 |  3 |  3 | (Voir ci-dessous)                |  
+| IR  | 5  | 5  | 2  |  2 |  2 | 2  |  2 |  2 |  3 |  3 | (Voir ci-dessous)                |  
 
 --
 
 # Greater6ix
 
 ![Toronto](http://10.13.237.2)
+
+## Commentaires
+
+* Mettre commande screenrc dans 1. Install OpenStack et expliquer
+
 
 --
 
