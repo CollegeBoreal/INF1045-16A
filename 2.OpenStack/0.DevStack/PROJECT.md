@@ -375,6 +375,13 @@ $ sudo sysctl -p
 $ wget http://cloud-images.ubuntu.com/xenial/current/xenial-server-cloudimg-amd64-disk1.img
 ```
 
+## Changer de tenant et password
+```
+$ source openrc johndoe General
+$  export OS_PASSWORD=openstack1
+```
+
+
 ## Installer l'image d'ubuntu 16.04 Cloud dans glance
 
 ```
